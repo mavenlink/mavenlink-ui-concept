@@ -1,2 +1,1 @@
-const name = "mavenlink-ui"
-export default name
+export {default as BrandLogo} from "./molecules/brand-logo"

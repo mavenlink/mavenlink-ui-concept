@@ -3,5 +3,19 @@
   "version": "0.0.1",
   "description": "Mavenlink Components and Design",
   "main": "./src/index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "react-scripts test --env=jsdom"
+  },
+  "peerDependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "enzyme": "^2.7.0",
+    "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-scripts": "^0.8.5"
+  }
 }

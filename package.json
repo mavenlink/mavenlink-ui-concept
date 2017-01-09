@@ -1,0 +1,7 @@
+{
+  "name": "mavenlink-ui",
+  "version": "0.0.1",
+  "description": "Mavenlink Components and Design",
+  "main": "src/index.js",
+  "license": "MIT"
+}

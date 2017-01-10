@@ -2,7 +2,7 @@ import React from "react"
 import {shallow} from "enzyme"
 import BrandLogo from "./brand-logo"
 
-describe("<BrandLogo />", () => {
+describe("molecules <BrandLogo />", () => {
   let component;
 
   beforeEach(() => {

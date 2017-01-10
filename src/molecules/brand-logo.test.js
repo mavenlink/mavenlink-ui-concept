@@ -1,6 +1,6 @@
+import BrandLogo from "./brand-logo"
 import React from "react"
 import {shallow} from "enzyme"
-import BrandLogo from "./brand-logo"
 
 describe("molecules <BrandLogo />", function () {
   beforeEach(function () {

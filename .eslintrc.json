@@ -7,5 +7,13 @@
     "react",
     "jsx-a11y",
     "import"
-  ]
+  ],
+  "rules": {
+    "comma-dangle": ["error", {"arrays": "always-multiline", "objects": "always-multiline"}],
+    "func-names": "off",
+    "object-curly-spacing": ["error", "never"],
+    "quotes": ["error", "double", {"avoidEscape": true}],
+    "react/jsx-filename-extension": "off",
+    "semi": ["error", "never"]
+  }
 }

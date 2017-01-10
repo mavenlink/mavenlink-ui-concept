@@ -1,5 +1,5 @@
 {
-  "name": "mavenlink-ui",
+  "name": "mavenlink-ui-concept",
   "version": "0.0.1",
   "description": "Mavenlink Components and Design",
   "main": "./src/index.js",

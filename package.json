@@ -5,6 +5,7 @@
   "main": "./src/index.js",
   "license": "MIT",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/**/*.js",
     "test": "react-scripts test --env=jsdom"
   },
   "peerDependencies": {
@@ -13,6 +14,11 @@
   },
   "devDependencies": {
     "enzyme": "^2.7.0",
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",

@@ -12,7 +12,6 @@
     "comma-dangle": ["error", {"arrays": "always-multiline", "objects": "always-multiline"}],
     "func-names": "off",
     "import/prefer-default-export": "off",
-    "max-len": "off",
     "object-curly-spacing": ["error", "never"],
     "quotes": ["error", "double", {"avoidEscape": true}],
     "react/jsx-filename-extension": "off",

@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react';
 
-export default function BrandLogo({height, width}) {
+export default function BrandLogo({ height, width }) {
   return (
     <svg height={height} width={width} viewBox="0 0 166 120" xmlns="http://www.w3.org/2000/svg">
       <title>Mavenlink Logo</title>
@@ -15,10 +15,10 @@ export default function BrandLogo({height, width}) {
           1.5l21.5-43.2l23.6,82.6L106,61.5z`}
       />
     </svg>
-  )
+  );
 }
 
 BrandLogo.propTypes = {
   height: React.PropTypes.number.isRequired,
   width: React.PropTypes.number.isRequired,
-}
+};

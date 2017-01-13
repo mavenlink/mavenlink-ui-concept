@@ -7,5 +7,9 @@
     "react",
     "jsx-a11y",
     "import"
-  ]
+  ],
+  "rules": {
+    "func-names": "off",
+    "react/jsx-filename-extension": "off"
+  }
 }

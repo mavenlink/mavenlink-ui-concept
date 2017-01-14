@@ -1,1 +1,1 @@
-export { default as BrandLogo } from './molecules/brand-logo';
+export { default } from './molecules/brand-logo';

@@ -4,6 +4,12 @@
   "description": "Mavenlink Components and Design",
   "main": "./src/index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom",
+    "lint": "./node_modules/.bin/eslint src/**/*.js lib/**/*.js"
+  },
   "devDependencies": {
     "autoprefixer": "6.5.1",
     "babel-core": "6.17.0",
@@ -51,12 +57,6 @@
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
-  },
-  "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom",
-    "lint": "./node_modules/.bin/eslint src/**/*.js lib/**/*.js"
   },
   "jest": {
     "collectCoverageFrom": [

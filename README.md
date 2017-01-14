@@ -12,7 +12,7 @@ This project intends to accomplish two things:
 
 More importantly, these two things exist to increase UI consistency and speed of development, and to facilitate collaboration amongst a much wider group of people.
 
-## Prior Art
+## Prior Work
 
 - Salesforce's [Lightning Design System](https://www.lightningdesignsystem.com/)
 - Brad Frost's [Atomic Design](http://atomicdesign.bradfrost.com/)

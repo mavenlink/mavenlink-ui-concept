@@ -12,6 +12,7 @@
   "rules": {
     "func-names": "off",
     "import/prefer-default-export": "off",
+    "no-multiple-empty-lines": ["error", {"max": 1, "maxEOF": 1, "maxBOF": 0}],
     "react/jsx-filename-extension": "off"
   }
 }

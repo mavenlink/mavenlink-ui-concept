@@ -52,10 +52,7 @@
     "webpack-dev-server": "1.16.2",
     "webpack-manifest-plugin": "1.1.0"
   },
-  "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
-  },
+  "dependencies": {},
   "jest": {
     "testPathIgnorePatterns": [
       "<rootDir>[/\\\\](build|docs|node_modules)[/\\\\]"

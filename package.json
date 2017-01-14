@@ -10,6 +10,10 @@
     "test": "node scripts/test.js --env=jsdom",
     "lint": "./node_modules/.bin/eslint 'src/**/*.js' 'lib/**/*.js'"
   },
+  "peerDependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
   "devDependencies": {
     "autoprefixer": "6.5.1",
     "babel-core": "6.17.0",

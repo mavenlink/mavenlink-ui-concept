@@ -10,7 +10,9 @@
     "import"
   ],
   "rules": {
+    "comma-dangle": ["error", "never"],
     "func-names": "off",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.{js,jsx}"]}],
     "no-multiple-empty-lines": ["error", {"max": 1, "maxEOF": 1, "maxBOF": 0}]
   }
 }

@@ -8,7 +8,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "lint": "./node_modules/.bin/eslint 'src/**/*.js' 'lib/**/*.js'"
+    "lint": "./node_modules/.bin/eslint 'src/**/*.{js,jsx}' 'lib/**/*.{js,jsx}'"
   },
   "peerDependencies": {
     "react": "^15.4.2",

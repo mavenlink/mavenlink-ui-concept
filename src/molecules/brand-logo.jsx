@@ -1,9 +1,9 @@
 import React from 'react';
+import SvgIcon from './svg-icon';
 
 export default function BrandLogo({ size }) {
   return (
-    <svg height={size} width={size} viewBox="0 0 166 120" xmlns="http://www.w3.org/2000/svg">
-      <title>Mavenlink Logo</title>
+    <SvgIcon height={size} width={size} title="Mavenlink Logo" viewBox="0 0 166 120">
       <path
         fill="#448FEA"
         d={['M162.7,110.9L132.8,6.6c-0.4-1.4-1.5-2.6-3.1-3.2c-1.4-0.6-3.6-0.4-5.1,0.9L82.6,41.1l-42-',
@@ -14,7 +14,7 @@ export default function BrandLogo({ size }) {
           '63.6l12.9-11.3l12.9,11.3l-12.9,26L69.7,63.6z M88.8,96l13.3-26.7l42.6,37.2L88.8,96z M106,6',
           '1.5l21.5-43.2l23.6,82.6L106,61.5z'].join('')}
       />
-    </svg>
+    </SvgIcon>
   );
 }
 

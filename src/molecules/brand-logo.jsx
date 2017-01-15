@@ -19,5 +19,5 @@ export default function BrandLogo({ size }) {
 }
 
 BrandLogo.propTypes = {
-  size: React.PropTypes.number.isRequired,
+  size: React.PropTypes.number.isRequired
 };

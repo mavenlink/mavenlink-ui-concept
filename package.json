@@ -60,6 +60,9 @@
   },
   "dependencies": {},
   "jest": {
+    "moduleNameMapper": {
+      "^.+\\/jsdoc!.+$": "<rootDir>/config/jest/jsdoc.js"
+    },
     "testPathIgnorePatterns": [
       "<rootDir>[/\\\\](build|docs|node_modules)[/\\\\]"
     ],

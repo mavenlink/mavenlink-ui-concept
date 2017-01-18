@@ -1,6 +1,14 @@
 import React from 'react';
 import SvgIcon from './svg-icon';
 
+/**
+ * The main Mavenlink logo
+ * @tag icon
+ * @tag svg
+ * @param {number} size The size in pixels of the icon
+ * @example
+ * <BrandLogo size="200" />
+ */
 export default function BrandLogo({ size }) {
   return (
     <SvgIcon height={size} width={size} title="Mavenlink Logo" viewBox="0 0 166 120">

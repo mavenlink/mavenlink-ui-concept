@@ -17,7 +17,7 @@ describe('<ComponentDocs />', () => {
     this.component = shallow(<ComponentDocs docs={docs} />)
   })
 
-  it('is a list of descriptions', function () {
+  it('lists the descriptions', function () {
     expect(this.component.equals(
       <ul>
         <li>First!</li>

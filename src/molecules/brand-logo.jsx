@@ -8,7 +8,7 @@ import SvgIcon from "./svg-icon"
  * @example
  * <BrandLogo size="200" />
  */
-export default function BrandLogo({ size }) {
+export default function BrandLogo({size}) {
   return (
     <SvgIcon height={size} width={size} title="Mavenlink Logo" viewBox="0 0 166 120">
       <path

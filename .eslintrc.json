@@ -14,6 +14,7 @@
     "func-names": "off",
     "import/no-extraneous-dependencies": "off",
     "no-multiple-empty-lines": ["error", {"max": 1, "maxEOF": 1, "maxBOF": 0}],
+    "object-curly-spacing": ["error", "never"],
     "quotes": ["error", "double", {"avoidEscape": true}],
     "semi": ["error", "never"]
   }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 
 /**
  * A generic SVG icon. Pass svg elements, such as `<path>` or `<g>`, to it as children.

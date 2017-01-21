@@ -4,10 +4,6 @@ import React from 'react'
  * A generic SVG icon. Pass svg elements, such as `<path>` or `<g>`, to it as children.
  * @tag icon
  * @tag svg
- * @param {number} height The height in pixels
- * @param {number} width The width in pixels
- * @param {string} viewBox The SVG viewbox
- * @param {string} title Accessibility title which will not be visible
  * @example
  * <SvgIcon height={100} width={200} viewBox="0 0 100 100" title="Foobar">
  *   <circle cx="100" cy="100" r="100" />

@@ -7,7 +7,11 @@ describe('<App />', () => {
     this.component = shallow(<App />)
   })
 
-  it('is just a <BrandLogo />', function () {
-    expect(this.component.is('BrandLogo')).toBe(true)
+  it('has a <BrandLogo />', function () {
+    expect(this.component.find('BrandLogo').length).toBe(1)
+  })
+
+  it('has a <ComponentDocs />', function () {
+    expect(this.component.find('ComponentDocs').length).toBe(1)
   })
 })

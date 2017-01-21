@@ -5,7 +5,6 @@ import SvgIcon from './svg-icon'
  * The main Mavenlink logo
  * @tag icon
  * @tag svg
- * @param {number} size The size in pixels of the icon
  * @example
  * <BrandLogo size="200" />
  */

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 /**
  * A generic SVG icon. Pass svg elements, such as `<path>` or `<g>`, to it as children.
@@ -19,7 +19,7 @@ export default function SvgIcon({ children, height, width, viewBox, title }) {
       <title>{title}</title>
       {children}
     </svg>
-  );
+  )
 }
 
 SvgIcon.propTypes = {
@@ -31,4 +31,4 @@ SvgIcon.propTypes = {
   width: React.PropTypes.number.isRequired,
   viewBox: React.PropTypes.string.isRequired,
   title: React.PropTypes.string.isRequired
-};
+}

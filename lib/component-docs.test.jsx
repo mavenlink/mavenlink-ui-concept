@@ -3,10 +3,16 @@ import { shallow } from 'enzyme'
 import ComponentDocs from './component-docs'
 
 describe('<ComponentDocs />', () => {
-  const docs = {
-    'foo/bar/first.jsx': [{ description: 'First!' }],
-    'foo/bar/second.jsx': [{ description: 'Second!' }]
-  }
+  const docs = [
+    {
+      path: 'foo/bar/first.jsx',
+      info: { description: 'First!' }
+    },
+    {
+      path: 'foo/bar/second.jsx',
+      info: { description: 'Second!' }
+    }
+  ]
 
   beforeEach(function () {
     this.component = shallow(<ComponentDocs docs={docs} />)

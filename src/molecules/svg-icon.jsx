@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 
 /**
  * A generic SVG icon. Pass svg elements, such as `<path>` or `<g>`, to it as children.
@@ -9,7 +9,7 @@ import React from 'react'
  *   <circle cx="100" cy="100" r="100" />
  * </SvgIcon>
  */
-export default function SvgIcon({ children, height, width, viewBox, title }) {
+export default function SvgIcon({children, height, width, viewBox, title}) {
   return (
     <svg height={height} width={width} viewBox={viewBox} xmlns="http://www.w3.org/2000/svg">
       <title>{title}</title>

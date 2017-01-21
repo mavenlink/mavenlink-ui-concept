@@ -1,5 +1,5 @@
-import React from 'react';
-import SvgIcon from './svg-icon';
+import React from 'react'
+import SvgIcon from './svg-icon'
 
 /**
  * The main Mavenlink logo
@@ -23,9 +23,9 @@ export default function BrandLogo({ size }) {
           '1.5l21.5-43.2l23.6,82.6L106,61.5z'].join('')}
       />
     </SvgIcon>
-  );
+  )
 }
 
 BrandLogo.propTypes = {
   size: React.PropTypes.number.isRequired
-};
+}

@@ -1,14 +1,8 @@
 import React from "react"
 
 /**
- * A generic SVG icon. Pass svg elements, such as `<path>` or `<g>`, to it as children.
- * @tag icon
- * @tag svg
- * @example
- * <SvgIcon height={100} width={200} viewBox="0 0 100 100" title="Foobar">
- *   <circle cx="100" cy="100" r="100" />
- * </SvgIcon>
- */
+A generic SVG icon. Nest svg elements, such as `<path>` or `<g>`.
+*/
 export default function SvgIcon({children, height, width, viewBox, title}) {
   return (
     <svg height={height} width={width} viewBox={viewBox} xmlns="http://www.w3.org/2000/svg">

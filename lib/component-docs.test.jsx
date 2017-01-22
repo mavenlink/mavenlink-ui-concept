@@ -6,10 +6,10 @@ describe("<ComponentDocs />", () => {
   const docs = [
     {
       path: "foo/bar/first.jsx",
-      info: {description: "First!"}
+      description: "First!"
     }, {
       path: "foo/bar/second.jsx",
-      info: {description: "Second!"}
+      description: "Second!"
     }
   ]
 

@@ -6,10 +6,12 @@ describe("<ComponentDocs />", () => {
   const docs = [
     {
       path: "foo/bar/first.jsx",
-      description: "First!"
+      description: "First!",
+      module: {default: {name: "One"}}
     }, {
       path: "foo/bar/second.jsx",
-      description: "Second!"
+      description: "Second!",
+      module: {default: {name: "Two"}}
     }
   ]
 
@@ -17,11 +19,11 @@ describe("<ComponentDocs />", () => {
     this.component = shallow(<ComponentDocs docs={docs} />)
   })
 
-  it("lists the descriptions", function () {
+  it("lists the names", function () {
     expect(this.component.equals(
       <ul>
-        <li>First!</li>
-        <li>Second!</li>
+        <li>One</li>
+        <li>Two</li>
       </ul>
     )).toBe(true)
   })

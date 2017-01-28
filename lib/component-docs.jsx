@@ -3,7 +3,7 @@ import React from "react"
 export default function ComponentDocs({docs}) {
   return (
     <ul>
-      {docs.map(doc => <li key={doc.path}>{doc.description}</li>)}
+      {docs.map(doc => <li key={doc.path}>{doc.module.default.name}</li>)}
     </ul>
   )
 }

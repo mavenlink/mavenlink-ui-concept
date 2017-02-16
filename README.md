@@ -17,3 +17,4 @@ More importantly, these two things exist to increase UI consistency and speed of
 - Salesforce's [Lightning Design System](https://www.lightningdesignsystem.com/)
 - Brad Frost's [Atomic Design](http://atomicdesign.bradfrost.com/)
 - FamilySearch's [Styleguide](https://familysearch.org/reference/styleguide/)
+- Walmart's [Electrode Explorer](https://github.com/electrode-io/electrode-explorer)

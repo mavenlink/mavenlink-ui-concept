@@ -2,7 +2,7 @@
   "name": "mavenlink-ui-concept",
   "version": "0.0.1",
   "description": "Mavenlink Components and Design",
-  "main": "./src/index.js",
+  "main": "./lib/index.js",
   "license": "MIT",
   "config": {
     "presets": [

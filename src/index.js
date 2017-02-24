@@ -1,2 +1,5 @@
-export {default as BrandLogo} from "./molecules/brand-logo"
-export {default as SvgIcon} from "./molecules/svg-icon"
+import React from "react"
+import ReactDOM from "react-dom"
+import App from "./app"
+
+ReactDOM.render(React.createElement(App, null), document.getElementById("root"))

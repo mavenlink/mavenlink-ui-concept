@@ -5,9 +5,9 @@
   "main": "./src/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "neutrino start --preset neutrino-preset-react",
+    "start": "neutrino start --preset neutrino-preset-react neutrino-preset-airbnb-base",
     "build": "neutrino build --presets neutrino-preset-react",
-    "test": "neutrino test --presets neutrino-preset-react neutrino-preset-jest"
+    "test": "neutrino test --presets neutrino-preset-react neutrino-preset-jest neutrino-preset-airbnb-base"
   },
   "peerDependencies": {
     "react": "^15.4.2",
@@ -18,6 +18,7 @@
     "eslint": "^3.16.1",
     "glob": "^7.1.1",
     "neutrino": "^4.1.0",
+    "neutrino-preset-airbnb-base": "^4.1.1",
     "neutrino-preset-jest": "^4.0.1",
     "neutrino-preset-react": "^4.1.0",
     "react": "^15.4.2",

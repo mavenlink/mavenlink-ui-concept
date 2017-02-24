@@ -4,10 +4,16 @@
   "description": "Mavenlink Components and Design",
   "main": "./src/index.js",
   "license": "MIT",
+  "config": {
+    "presets": [
+      "neutrino-preset-airbnb-base",
+      "neutrino-preset-react"
+    ]
+  },
   "scripts": {
-    "start": "neutrino start --preset neutrino-preset-react neutrino-preset-airbnb-base",
-    "build": "neutrino build --presets neutrino-preset-react",
-    "test": "neutrino test --presets neutrino-preset-react neutrino-preset-jest neutrino-preset-airbnb-base"
+    "start": "neutrino start",
+    "build": "neutrino build",
+    "test": "neutrino test --presets neutrino-preset-jest"
   },
   "peerDependencies": {
     "react": "^15.4.2",

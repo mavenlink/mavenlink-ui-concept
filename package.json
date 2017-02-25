@@ -7,7 +7,8 @@
   "config": {
     "presets": [
       "neutrino-preset-airbnb-base",
-      "neutrino-preset-react"
+      "neutrino-preset-react",
+      "neutrino-custom.js"
     ]
   },
   "scripts": {

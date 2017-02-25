@@ -14,14 +14,13 @@ module.exports = function () {
       return callback(err)
     }
 
-    const docs = files.reduce((acc, file) => {
+    const docs = files.map((file) => {
       const contents = fs.readFileSync(file, {encoding: "utf8"})
       const componentInfo = reactDocs.parse(contents)
       componentInfo.path = file
       componentInfo.module = `require('${file}')`
-      acc.push(componentInfo)
-      return acc
-    }, [])
+      return componentInfo
+    })
 
     return callback(null, `module.exports = ${toCode(docs)}`)
   })

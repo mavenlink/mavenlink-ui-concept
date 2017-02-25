@@ -40,7 +40,7 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "^.+\\/documentation!.+$": "<rootDir>/config/jest-custom.js"
+      "^.+\\/documentation!.+$": "<rootDir>/config/fake-documentation.js"
     },
     "testPathDirs": [
       "src",

@@ -8,7 +8,7 @@
     "presets": [
       "neutrino-preset-airbnb-base",
       "neutrino-preset-react",
-      "custom-neutrino.js"
+      "config/neutrino-custom.js"
     ]
   },
   "scripts": {
@@ -36,7 +36,7 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "^.+\\/documentation!.+$": "<rootDir>/custom-jest.js"
+      "^.+\\/documentation!.+$": "<rootDir>/config/jest-custom.js"
     },
     "testPathDirs": ["src", "lib"]
   }

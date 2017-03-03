@@ -38,6 +38,9 @@
     "moduleNameMapper": {
       "^.+\\/documentation!.+$": "<rootDir>/config/jest-custom.js"
     },
-    "testPathDirs": ["src", "lib"]
+    "testPathDirs": [
+      "src",
+      "lib"
+    ]
   }
 }

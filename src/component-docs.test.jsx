@@ -19,30 +19,31 @@ describe("<ComponentDocs />", () => {
     this.component = shallow(<ComponentDocs docs={docs} />)
   })
 
-  it("has an input", function () {
-    expect(this.component.find("input").length).toBe(1)
-  })
-
-  it("lists the names", function () {
-    expect(this.component.contains(
-      <ul>
-        <li>One</li>
-        <li>Two</li>
-      </ul>
-    )).toBe(true)
-  })
-
-  describe("entering text into the input", () => {
+  describe("the sidebar", () => {
     beforeEach(function () {
-      this.component.find("input").simulate("change", {target: {value: "n"}})
+      this.sidebar = () => this.component.find("Sidebar")
     })
 
-    it("filters the list", function () {
-      expect(this.component.contains(
-        <ul>
-          <li>One</li>
-        </ul>
-      )).toBe(true)
+    it("has a list of names", function () {
+      expect(this.sidebar().prop("names")).toEqual(["One", "Two"])
+    })
+
+    it("has an empty value", function () {
+      expect(this.sidebar().prop("value")).toBe("")
+    })
+
+    describe("entering text", () => {
+      beforeEach(function () {
+        this.sidebar().simulate("change", {target: {value: "n"}})
+      })
+
+      it("filters the names", function () {
+        expect(this.sidebar().prop("names")).toEqual(["One"])
+      })
+
+      it("sets the value", function () {
+        expect(this.sidebar().prop("value")).toBe("n")
+      })
     })
   })
 })

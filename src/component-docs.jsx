@@ -1,4 +1,5 @@
 import React, {Component} from "react"
+import Sidebar from "./sidebar"
 
 export default class ComponentDocs extends Component {
   constructor(props) {
@@ -23,10 +24,11 @@ export default class ComponentDocs extends Component {
   render() {
     return (
       <div>
-        <input placeholder="Filter by name" value={this.state.value} onChange={this.handleChange} />
-        <ul>
-          {this.state.docs.map(doc => <li key={doc.path}>{doc.module.default.name}</li>)}
-        </ul>
+        <Sidebar
+          names={this.state.docs.map(doc => doc.module.default.name)}
+          onChange={this.handleChange}
+          value={this.state.value}
+        />
       </div>
     )
   }

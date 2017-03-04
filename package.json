@@ -22,12 +22,13 @@
   },
   "devDependencies": {
     "enzyme": "^2.7.1",
-    "eslint": "^3.16.1",
+    "eslint": "^3.17.0",
+    "eslint-plugin-import": "^2.2.0",
     "glob": "^7.1.1",
-    "neutrino": "^4.1.0",
-    "neutrino-preset-airbnb-base": "^4.1.1",
-    "neutrino-preset-jest": "^4.0.1",
-    "neutrino-preset-react": "^4.1.0",
+    "neutrino": "^4.3.1",
+    "neutrino-preset-airbnb-base": "^4.3.1",
+    "neutrino-preset-jest": "^4.3.0",
+    "neutrino-preset-react": "^4.2.3",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-docgen": "^2.13.0",
@@ -38,6 +39,9 @@
     "moduleNameMapper": {
       "^.+\\/documentation!.+$": "<rootDir>/config/jest-custom.js"
     },
-    "testPathDirs": ["src", "lib"]
+    "testPathDirs": [
+      "src",
+      "lib"
+    ]
   }
 }

@@ -9,7 +9,10 @@
       "neutrino-preset-airbnb-base",
       "neutrino-preset-react",
       "config/neutrino-custom.js"
-    ]
+    ],
+    "html": {
+      "title": "Mavenlink UI Concept"
+    }
   },
   "scripts": {
     "start": "neutrino start",

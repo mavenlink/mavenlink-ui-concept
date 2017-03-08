@@ -47,15 +47,4 @@ describe("<Main />", () => {
       expect(this.component.find('.idioms').length).toEqual(1)
     })
   })
-
-  describe("components section", () => {
-    it("renders component sections", function () {
-      expect(this.component.find('.section').length).toEqual(2)
-      expect(this.component.find('.section .section-description').length).toEqual(2)
-    })
-
-    it("renders component section descriptions", function () {
-      expect(this.component.find('.section .section-description').length).toEqual(2)
-    })
-  })
 })

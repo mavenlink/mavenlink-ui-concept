@@ -6,7 +6,7 @@ class Sections extends React.Component {
     return (
       <ul>
         {this.props.docs.map((component, i) =>
-          <Section className="section" component={component} uniqueKey={i} key={i.toString()} />
+          <Section className="section" component={component} key={i.toString()} />
         )}
       </ul>
     )

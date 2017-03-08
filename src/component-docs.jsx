@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import Sidebar from "./sidebar"
+import Main from "./main"
 
 export default class ComponentDocs extends Component {
   constructor(props) {
@@ -29,6 +30,7 @@ export default class ComponentDocs extends Component {
           onChange={this.handleChange}
           value={this.state.value}
         />
+        <Main docs={this.state.docs}/>
       </div>
     )
   }

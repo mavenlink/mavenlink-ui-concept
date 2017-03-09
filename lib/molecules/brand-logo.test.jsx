@@ -4,7 +4,14 @@ import BrandLogo from "./brand-logo"
 
 describe("molecules <BrandLogo />", () => {
   beforeEach(function () {
-    this.component = shallow(<BrandLogo size={400} />)
+    this.render = (props) => {
+      const defaultProps = {
+        size: 400
+      }
+      return shallow(<BrandLogo {...Object.assign({}, defaultProps, props)} />)
+    }
+
+    this.component = this.render()
   })
 
   it("is an <SvgIcon />", function () {

@@ -9,15 +9,15 @@ const {toCode} = require("./utils")
 // 2. trim outer newlines
 // 3. convert to a react friendly render
 function parseExamples(str) {
-  let contents = grabStyleguideChunk(contents)
+  let contents = grabStyleguideChunk(str)
   contents = trimNewlines(contents)
   contents = convertToRender(contents)
   return contents
 }
 
 function grabStyleguideChunk(str) {
-  const regex =  /styleguide.start([^]*)styleguide.end/i
-  const match str.match(regex)
+  const regex = /styleguide.start([^]*)styleguide.end/i
+  const match = str.match(regex)
 
   if (match) {
     return match[1]

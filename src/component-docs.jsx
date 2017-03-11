@@ -39,5 +39,5 @@ export default class ComponentDocs extends Component {
 
 ComponentDocs.propTypes = {
   docs: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
-  examples: React.PropTypes.arrayOf(React.PropTypes.object).isRequired
+  examples: React.PropTypes.arrayOf(React.PropTypes.string).isRequired
 }

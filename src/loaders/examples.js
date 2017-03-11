@@ -15,7 +15,7 @@ function parseExamples(str) {
   return contents
 }
 
-function grabStyleguideChu(str) {
+function grabStyleguideChunk(str) {
   const regex =  /styleguide.start([^]*)styleguide.end/i
   const match str.match(regex)
 

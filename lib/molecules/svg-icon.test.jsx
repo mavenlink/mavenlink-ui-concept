@@ -4,20 +4,17 @@ import SvgIcon from "./svg-icon"
 
 describe("molecules <SvgIcon />", () => {
   beforeEach(function () {
-    this.render = (props) => {
-      const defaultProps = {
-        height: 100,
-        width: 200
-      }
-
-      return shallow(
-        <SvgIcon {...Object.assign({}, defaultProps, props)} viewBox="0 0 100 100" title="Foobar">
-          <circle cx="100" cy="100" r="100" />
-        </SvgIcon>
-      )
+    //Styleguide start
+    const defaultProps = {
+      height: 100,
+      width: 200
     }
-
-    this.component = this.render()
+    this.component = shallow(
+      <SvgIcon {...Object.assign({}, defaultProps, {})} viewBox="0 0 100 100" title="Foobar">
+        <circle cx="100" cy="100" r="100" />
+      </SvgIcon>
+    )
+    //Styleguide end 
   })
 
   it("is an <svg>", function () {

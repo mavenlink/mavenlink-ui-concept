@@ -7,6 +7,7 @@ export default class ComponentDocs extends Component {
     super(props)
     this.state = {
       docs: Array.from(props.docs),
+      examples: props.examples,
       value: ""
     }
     this.handleChange = this.handleChange.bind(this)
@@ -30,12 +31,13 @@ export default class ComponentDocs extends Component {
           onChange={this.handleChange}
           value={this.state.value}
         />
-        <Main docs={this.state.docs}/>
+        <Main docs={this.state.docs} examples={this.state.examples} />
       </div>
     )
   }
 }
 
 ComponentDocs.propTypes = {
-  docs: React.PropTypes.arrayOf(React.PropTypes.object).isRequired
+  docs: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
+  examples: React.PropTypes.arrayOf(React.PropTypes.object).isRequired
 }

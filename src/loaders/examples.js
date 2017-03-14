@@ -54,7 +54,7 @@ function convertToRender(str) {
     const renderStart = "render() {\n"
     const renderEnd = "\n}"
 
-    return JSON.stringify(`${before}\n${renderStart}\n${swapped}\n${after}\n${renderEnd}`)
+    return `${before}\n${renderStart}\n${swapped}\n${after}\n${renderEnd}`
   } else {
     console.error("Issue: Check spec has proper formatting I.e shallow|mount calls and styleguide start/end tags")
     return null

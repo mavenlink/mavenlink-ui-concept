@@ -28,7 +28,7 @@ describe("<Main />", () => {
 
   describe("basic rendering", () => {
     it("renders styleguide main wrapper", function () {
-      expect(this.component.find('.styleguide-main').length).toEqual(1)
+      expect(this.component.find('.main').length).toEqual(1)
     })
 
     it("renders main with base", function () {

@@ -2,6 +2,12 @@ import React from "react"
 import Prism from "prismjs"
 import "prismjs/components/prism-javascript.js"
 
+const styles = {
+  container: {
+    marginTop: 40
+  }
+}
+
 class Section extends React.Component {
   componentDidMount() {
     Prism.highlightAll()
@@ -13,7 +19,7 @@ class Section extends React.Component {
     let example = this.props.component.example
     example = example.replace(/ /g, "\u00a0").replace(/</g, "&lt;").replace(/>/g, "&gt;")
     return (
-      <li>
+      <li style={styles.container}>
         <h2 className="section-description">{this.props.component.description}</h2>
         <span className="section-path">{this.props.component.path}</span>
         <div className="section-example">

@@ -2,6 +2,12 @@ import React, {Component} from "react"
 import Sidebar from "./sidebar"
 import Main from "./main"
 
+const styles = {
+  container: {
+    display: "flex"
+  }
+}
+
 export default class ComponentDocs extends Component {
   constructor(props) {
     super(props)
@@ -33,7 +39,7 @@ export default class ComponentDocs extends Component {
 
   render() {
     return (
-      <div>
+      <div style={styles.container}>
         <Sidebar
           names={this.state.docs.map(doc => doc.module.default.name)}
           onChange={this.handleChange}

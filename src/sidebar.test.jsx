@@ -1,6 +1,7 @@
 import React from "react"
 import {shallow} from "enzyme"
 import Sidebar from "./sidebar"
+import BrandLogo from "../lib/molecules/brand-logo"
 
 describe("<Sidebar />", () => {
   beforeEach(function () {
@@ -17,6 +18,9 @@ describe("<Sidebar />", () => {
   it("renders correctly", function () {
     expect(this.component.matchesElement(
       <div>
+        <div>
+          <BrandLogo size={80} />
+        </div>
         <input value="foobar" />
         <ul>
           <li>first</li>

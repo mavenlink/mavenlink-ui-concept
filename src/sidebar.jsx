@@ -30,7 +30,7 @@ export default function Sidebar({names, onChange, value}) {
       </div>
       <input style={styles.input} placeholder="Filter by name" value={value} onChange={onChange} />
       <ul>
-        {names.map(name => <li style={styles.li} key={name}>{name}</li>)}
+        {names.map(name => <li style={styles.li} key={name}><a href={`#${name}`}>{name}</a></li>)}
       </ul>
     </div>
   )

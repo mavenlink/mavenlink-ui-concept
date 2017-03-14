@@ -19,7 +19,7 @@ class Section extends React.Component {
     let example = this.props.component.example
     example = example.replace(/ /g, "\u00a0").replace(/</g, "&lt;").replace(/>/g, "&gt;")
     return (
-      <li style={styles.container}>
+      <li style={styles.container} id={this.props.component.module.default.name}>
         <h2 className="section-description">{this.props.component.description}</h2>
         <span className="section-path">{this.props.component.path}</span>
         <div className="section-example">

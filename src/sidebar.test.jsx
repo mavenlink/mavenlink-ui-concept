@@ -23,9 +23,9 @@ describe("<Sidebar />", () => {
         </div>
         <input value="foobar" />
         <ul>
-          <li>first</li>
-          <li>second</li>
-          <li>third</li>
+          <li><a>first</a></li>
+          <li><a>second</a></li>
+          <li><a>third</a></li>
         </ul>
       </div>
     )).toBe(true)

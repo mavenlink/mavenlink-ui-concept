@@ -7,7 +7,8 @@ describe("<Section />", () => {
     const comp = {
       description: "my logo",
       path: "/path/to/brand-logo.jsx",
-      example: "<span>hello world</span>"
+      example: "<span>hello world</span>",
+      module: {default: {name: "MyLogo"}}
     }
     this.component = shallow(
       <Section className="abc" component={comp} key={"abcxyz"} />

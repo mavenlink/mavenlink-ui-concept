@@ -16,7 +16,7 @@ function parseExamples(str) {
 }
 
 function grabStyleguideChunk(str) {
-  const regex = /styleguide.start([^]*)styleguide.end/i
+  const regex = /styleguide.start([^]*)\/\/styleguide.end/i
   const match = str.match(regex)
 
   if (match) {
@@ -39,6 +39,7 @@ function convertToRender(str) {
     //before and after the line match
     const before = match[1]
     const after = match[4]
+    after.replace(/\/\/$/, '')
 
     // matches actual line like this.component = shallow(...
     const line = match[2]

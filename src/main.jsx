@@ -1,4 +1,4 @@
-import React from "React"
+import React from "react"
 import Category from "./category"
 import Sections from "./sections"
 

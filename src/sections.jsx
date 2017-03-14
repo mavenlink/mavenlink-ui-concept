@@ -1,4 +1,4 @@
-import React from "React"
+import React from "react"
 import Section from "./section"
 
 class Sections extends React.Component {

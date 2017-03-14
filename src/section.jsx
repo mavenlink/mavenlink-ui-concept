@@ -16,9 +16,11 @@ class Section extends React.Component {
       <li>
         <h2 className="section-description">{this.props.component.description}</h2>
         <span className="section-path">{this.props.component.path}</span>
-        <code style={{whiteSpace: "pre"}} className="language-javascript section-example">
-          <div dangerouslySetInnerHTML={ {__html: example} } />
-        </code>
+        <p className="section-example">
+          <code style={{whiteSpace: "pre"}} className="language-javascript">
+            <div dangerouslySetInnerHTML={ {__html: example} } />
+          </code>
+        </p>
       </li>
     )
   }

@@ -5,9 +5,17 @@ import Main from "./main"
 export default class ComponentDocs extends Component {
   constructor(props) {
     super(props)
+
+    const d = Array.from(props.docs)
+    const docsMerged = []
+    d.forEach((value, index) => {
+      const obj = value
+      obj.example = props.examples[index]
+      docsMerged.push(obj)
+    })
+
     this.state = {
-      docs: Array.from(props.docs),
-      examples: props.examples,
+      docs: docsMerged,
       value: ""
     }
     this.handleChange = this.handleChange.bind(this)
@@ -31,7 +39,7 @@ export default class ComponentDocs extends Component {
           onChange={this.handleChange}
           value={this.state.value}
         />
-        <Main docs={this.state.docs} examples={this.state.examples} />
+        <Main docs={this.state.docs} />
       </div>
     )
   }

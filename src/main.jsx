@@ -8,7 +8,7 @@ class Main extends React.Component {
       <div className="styleguide-main">
         <Category className="category base"></Category>
         <Category className="category components">
-          <Sections className="sections" docs={this.props.docs}/>
+          <Sections className="sections" docs={this.props.docs} examples={this.props.examples} />
         </Category>
         <Category className="category modules"></Category>
         <Category className="category idioms"></Category>

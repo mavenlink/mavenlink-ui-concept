@@ -6,7 +6,8 @@ describe("<Section />", () => {
   beforeEach(function () {
     const comp = {
       description: "my logo",
-      path: "/path/to/brand-logo.jsx"
+      path: "/path/to/brand-logo.jsx",
+      example: "<span>hello world</span>"
     }
     this.component = shallow(
       <Section className="abc" component={comp} key={"abcxyz"} />

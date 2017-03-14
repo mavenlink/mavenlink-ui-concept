@@ -32,6 +32,7 @@
     "neutrino-preset-airbnb-base": "^4.3.1",
     "neutrino-preset-jest": "^4.3.0",
     "neutrino-preset-react": "^4.2.3",
+    "prismjs": "^1.6.0",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-docgen": "^2.13.0",
@@ -40,7 +41,8 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "^.+\\/documentation!.+$": "<rootDir>/config/fake-documentation.js"
+      "^.+\\/documentation!.+$": "<rootDir>/config/fake-documentation.js",
+      "^.+\\/examples!.+$": "<rootDir>/config/fake-examples.js"
     },
     "testPathDirs": [
       "src",

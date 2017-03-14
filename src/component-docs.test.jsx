@@ -16,7 +16,7 @@ describe("<ComponentDocs />", () => {
   ]
 
   beforeEach(function () {
-    this.component = shallow(<ComponentDocs docs={docs} />)
+    this.component = shallow(<ComponentDocs docs={docs} examples={[]} />)
   })
 
   describe("the sidebar", () => {

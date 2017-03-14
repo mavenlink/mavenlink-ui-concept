@@ -1,11 +1,27 @@
 import React, {Component} from "react"
 import Sidebar from "./sidebar"
+import Main from "./main"
+
+const styles = {
+  container: {
+    display: "flex"
+  }
+}
 
 export default class ComponentDocs extends Component {
   constructor(props) {
     super(props)
+
+    const d = Array.from(props.docs)
+    const docsMerged = []
+    d.forEach((value, index) => {
+      const obj = value
+      obj.example = props.examples[index]
+      docsMerged.push(obj)
+    })
+
     this.state = {
-      docs: Array.from(props.docs),
+      docs: docsMerged,
       value: ""
     }
     this.handleChange = this.handleChange.bind(this)
@@ -23,17 +39,19 @@ export default class ComponentDocs extends Component {
 
   render() {
     return (
-      <div>
+      <div style={styles.container}>
         <Sidebar
           names={this.state.docs.map(doc => doc.module.default.name)}
           onChange={this.handleChange}
           value={this.state.value}
         />
+        <Main docs={this.state.docs} />
       </div>
     )
   }
 }
 
 ComponentDocs.propTypes = {
-  docs: React.PropTypes.arrayOf(React.PropTypes.object).isRequired
+  docs: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
+  examples: React.PropTypes.arrayOf(React.PropTypes.string).isRequired
 }

@@ -5,6 +5,14 @@ import "prismjs/components/prism-javascript.js"
 const styles = {
   container: {
     marginTop: 40
+  },
+  example: {
+    backgroundColor: "#f8f8f8",
+    padding: 10,
+    marginTop: 20
+  },
+  code: {
+    whiteSpace: "pre"
   }
 }
 
@@ -22,8 +30,8 @@ class Section extends React.Component {
       <li style={styles.container} id={this.props.component.module.default.name}>
         <h2 className="section-description">{this.props.component.description}</h2>
         <span className="section-path">{this.props.component.path}</span>
-        <div className="section-example">
-          <code style={{whiteSpace: "pre"}} className="language-javascript">
+        <div style={styles.example} className="section-example">
+          <code style={styles.code} className="language-javascript">
             <div dangerouslySetInnerHTML={ {__html: example} } />
           </code>
         </div>
